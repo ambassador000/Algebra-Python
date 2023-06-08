@@ -8,13 +8,16 @@ ordinal_number = 1
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+
 def line_of_stars_print():
     terminal_width = os.get_terminal_size().columns
     print('*' * terminal_width)
 
+
 def header_text_centered_print(text):
     terminal_size = os.get_terminal_size().columns
     print(text.center(terminal_size))
+
 
 def line_of_underscores_print():
     terminal_width = os.get_terminal_size().columns
